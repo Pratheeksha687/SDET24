@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test name="Testrunner-2(failed)" parallel="tests">
+    <classes>
+      <class name="com.crm.comcast.organisationcontacttest.CreateOrganisationTest">
+        <methods>
+          <include name="configBm"/>
+          <include name="CreateOrganisation"/>
+          <include name="configAm"/>
+          <include name="configBs"/>
+          <include name="configBc"/>
+        </methods>
+      </class> <!-- com.crm.comcast.organisationcontacttest.CreateOrganisationTest -->
+      <class name="com.crm.comcast.organisationcontacttest.CreateContactTest">
+        <methods>
+          <include name="configBm"/>
+          <include name="configAm"/>
+          <include name="configBc"/>
+        </methods>
+      </class> <!-- com.crm.comcast.organisationcontacttest.CreateContactTest -->
+    </classes>
+  </test> <!-- Testrunner-2(failed) -->
+  <test name="Testrunner-1(failed)" parallel="tests">
+    <classes>
+      <class name="com.crm.comcast.organisationcontacttest.CreateOrganisationTest">
+        <methods>
+          <include name="configBm"/>
+          <include name="configAm"/>
+          <include name="configBs"/>
+          <include name="configBc"/>
+        </methods>
+      </class> <!-- com.crm.comcast.organisationcontacttest.CreateOrganisationTest -->
+      <class name="com.crm.comcast.organisationcontacttest.CreateContactTest">
+        <methods>
+          <include name="configBm"/>
+          <include name="createContact"/>
+          <include name="configAm"/>
+          <include name="configBc"/>
+        </methods>
+      </class> <!-- com.crm.comcast.organisationcontacttest.CreateContactTest -->
+    </classes>
+  </test> <!-- Testrunner-1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
